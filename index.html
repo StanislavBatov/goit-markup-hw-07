@@ -54,7 +54,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="modal-btn hero-btn" type="button" data-modal-open>Order Service</button>
+        <button class="modal-btn hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Section-1 -->
@@ -421,6 +421,23 @@
         </li>
       </ul>
     </div>
+    <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="E-mail"
+              name="user-email"
+            />
+            <button type="submit" class="button-subscribe">
+              Subscribe
+              <svg class="button-subscribe-icon" height="24" width="24">
+                <use href="./images/symbol-defs.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
   </div>
     </footer>
       <!-- Backdrop -->
@@ -431,6 +448,76 @@
             <use href="./images/symbol-defs.svg#close-button-icon"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-title">Leave your contacts and we will call you back</p>
+          <div class="modal-field">
+            <label class="input-text" for="name">Name</label>
+            <div class="input-wrap">
+          <input class="modal-input" 
+          type="text" 
+          name="name" 
+          id="name"
+          placeholder="Name">
+          <svg class="modal-icon" width="18px" height="24px">
+            <use href="./images/symbol-defs.svg#name-icon"></use>
+          </svg>
+          <div class="line"></div>
+          </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-phone">Phone</label>
+            <div class="input-wrap">
+          <input class="modal-input" 
+          type="tel" 
+          name="user-phone"
+          id="user-phone" 
+          placeholder="Phone">
+          <svg class="modal-icon" width="18px" height="24px">
+            <use href="./images/symbol-defs.svg#phone-icon"></use>
+          </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="email">Email</label>
+            <div class="input-wrap">
+          <input class="modal-input" 
+          type="email" 
+          name="email"
+          id="email" 
+          placeholder="Email">
+          <svg class="modal-icon" width="18px" height="24px">
+            <use href="./images/symbol-defs.svg#email-icon"></use>
+          </svg>
+          </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-text">Comment</label>
+            <textarea
+              class="modal-textarea"
+              id="user-text"
+              name="Text input"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="terms-acces">
+            <label class="modal-input-terms" for="agree">
+              <input
+                class="modal-input-checkbox visually-hidden"
+                type="checkbox"
+                name="agree"
+                id="agree"
+                required/>
+              <span class="alt-checkbox"
+                ><svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/symbol-defs.svg#icon-vector"></use>
+                </svg>
+                </span>
+              I accept the terms and conditions of the
+              <a class="privat-policy" href="">Privacy Policy</a></label>
+          </div>
+          <button class="send-button" 
+          type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
