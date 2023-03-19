@@ -22,6 +22,8 @@
     max-width: 768px;
   }
 
+  /* HEADER */
+
   .header-container {
     padding: 0 16px;
     display: flex;
@@ -85,7 +87,6 @@
     display: block;
     flex-wrap: wrap;
     gap: 12px;
-    /* margin-left: 120px; */
   }
 
   .address-link {
@@ -102,16 +103,73 @@
   .address-link:focus {
     color: var(--ocean-color);
   }
+
+
+  /* SECTION-1 */
+
+  .work-features {
+    gap: 24px;
+  }
+
+  .work-feature-item {
+    max-width: 351px;
+  }
+
+
+  /* SECTION-3 */
+
+  .team-list {
+    gap: 24px;
+    justify-content: center;
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 93px;
+  }
+
+  .logo-container {
+    margin-right: 24px;
+  }
+
+  .footer .logo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .social-media-title {
+    text-align: left;
+  }
+
+  .footer-subscribe-title {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+    padding-left: 23px;
+    padding-right: 25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
 
   /* HEADER */
 
-  .page-nav {
+  .page-nav {}
 
-  }
-  
   .logo {
     margin-right: 76px;
   }
@@ -252,18 +310,8 @@
     padding: 100px 0;
   }
 
-  .footer-container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
-  }
-
   .logo-container {
-    margin-bottom: 0;
-  }
-
-  .footer .logo {
-    text-align: left;
+    margin: 0;
   }
 
   .social-media-container {
@@ -271,35 +319,10 @@
     margin-bottom: 0;
   }
 
-  .social-media-title {
-    text-align: left;
-  }
-
-  .social-media-list {
-    justify-content: flex-start;
-  }
-
   .footer-subscribe {
     margin-left: 80px;
   }
 
-  .footer-subscribe-title {
-    text-align: left;
-  }
-
-  .footer-form {
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  .footer-input {
-    max-width: 264px;
-  }
-
-  .footer-form {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
 
   /* BACKDROP */
 
