@@ -227,6 +227,7 @@
   }
 
   .header-contacts {
+    display: flex;
     margin-left: 332px;
   }
 
