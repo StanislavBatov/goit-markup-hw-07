@@ -4,25 +4,55 @@
     max-width: 428px;
   }
 
-  /* SECTION-3 */
-
-  .team-container {
-    max-width: 264px;
+  .hero {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/tablet-hero-image-media-1x.jpg);
   }
 
-  .menu-social-icon-links {
-    gap: 56px;
-    flex-wrap: wrap;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-image-media-2x.jpg);
+    }
   }
-
 }
 
-@media screen and (min-width: 760px) {
+/* SECTION-3 */
+
+.team-container {
+  max-width: 264px;
+}
+
+.menu-social-icon-links {
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 
   /* HEADER */
+
+  .hero {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/descktop-hero-image-media-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)), url(../images/descktop-hero-image-media-2x.jpg);
+    }
+  }
 
   .header-container {
     padding: 0 16px;
@@ -31,7 +61,7 @@
     align-items: center;
   }
 
-  .btn-burger {
+  .button-burger {
     display: none;
   }
 
@@ -118,10 +148,25 @@
 
   /* SECTION-3 */
 
+  .team {
+    padding: 96px 0;
+  }
+
   .team-list {
     gap: 24px;
     justify-content: center;
   }
+
+  /* SECTION-4 */
+
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-link {
+    width: 168px;
+  }
+
 
   /* FOOTER */
 
@@ -167,8 +212,6 @@
 @media screen and (min-width: 1200px) {
 
   /* HEADER */
-
-  .page-nav {}
 
   .logo {
     margin-right: 76px;
@@ -261,6 +304,16 @@
   .about {
     display: block;
     padding-bottom: 120px;
+  }
+
+  .section-titel {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+    margin-bottom: 72px;
   }
 
   .img-job {
