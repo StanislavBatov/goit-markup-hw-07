@@ -4,6 +4,24 @@
     max-width: 428px;
   }
 
+  .social-mobile-list {
+    display: flex;
+    gap: 56px;
+  }
+
+  /* SECTION-3 */
+
+  .team-container {
+    max-width: 264px;
+  }
+
+  .menu-social-icon-links {
+    gap: 56px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 759px) {
   .hero {
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -18,17 +36,6 @@
           rgba(46, 47, 66, 0.7)), url(../images/tablet-hero-image-media-2x.jpg);
     }
   }
-}
-
-/* SECTION-3 */
-
-.team-container {
-  max-width: 264px;
-}
-
-.menu-social-icon-links {
-  gap: 56px;
-  flex-wrap: wrap;
 }
 
 
@@ -115,11 +122,11 @@
 
   .header-contacts {
     display: block;
-    flex-wrap: wrap;
-    gap: 12px;
   }
 
   .address-link {
+    display: block;
+
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
@@ -134,17 +141,25 @@
     color: var(--ocean-color);
   }
 
+  .contacts-phone-number {
+    margin-top: 12px;
+  }
+
 
   /* SECTION-1 */
 
+
   .work-features {
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
   }
 
   .feature-title {
     text-align: left;
   }
-  
+
   .work-feature-item {
     max-width: 351px;
   }
@@ -208,8 +223,6 @@
 
   .modal {
     width: 408px;
-    padding-left: 23px;
-    padding-right: 25px;
   }
 }
 
@@ -234,6 +247,10 @@
     display: flex;
     margin-left: auto;
     gap: 40px;
+  }
+
+  .contacts-phone-number {
+    margin-top: auto;
   }
 
 
@@ -269,6 +286,7 @@
   .work-features {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     gap: 24px;
   }
 

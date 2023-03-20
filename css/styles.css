@@ -114,6 +114,7 @@ img {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
@@ -143,12 +144,14 @@ img {
   background-color: transparent;
 }
 
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 284px;
+}
+
+.contacts-item {
+  color: var(--ocean-color);
 }
 
 .mobile-menu-link {
@@ -165,6 +168,8 @@ img {
   color: var(--ocean-color);
 }
 
+
+
 .mobile-contacts {
   display: flex;
   flex-direction: column;
@@ -173,12 +178,13 @@ img {
 }
 
 .mobile-phone-link {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--slate-color);
+  color: var(--iris-color);
 }
 
 .mobile-phone-link:hover,
@@ -188,6 +194,7 @@ img {
 
 
 .mobile-address-link {
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -196,10 +203,10 @@ img {
 
 .social-mobile-list {
   display: flex;
-  gap: 56px;
+  gap: 24px;
 }
 
-.social-mobile-item {
+.social-mobile-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +214,6 @@ img {
   width: 40px;
   height: 40px;
   background-color: var(--iris-color);
-  opacity: 0.1;
 }
 
 .social-mobile-icon {
@@ -390,7 +396,7 @@ img {
 /* SECTION-3 */
 
 .team {
-  padding: 96px 82px;
+  padding: 96px 16px;
   background-color: var(--cloud-color);
 }
 
@@ -411,6 +417,7 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
@@ -477,6 +484,7 @@ img {
   height: 16px;
   fill: var(--cloud-color);
 }
+
 
 /* Section-4 */
 
@@ -1031,4 +1039,23 @@ span.white {
 .send-button:hover {
   background-color: var(--ocean-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+.modal {
+  width: 100%;
+  height: auto;
+}
+
+  .customers-list {
+    gap: 0;
+  }
+
+  .customers-item {
+    width: calc((100%-16px)/2);
+  }
+
+  .customers-link {
+    width: 100%;
+  }
 }
