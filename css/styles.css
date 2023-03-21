@@ -1042,17 +1042,17 @@ span.white {
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-.modal {
-  width: 100%;
-  height: auto;
-}
-
-  .customers-list {
-    gap: 0;
+  .modal {
+    width: 100%;
+    height: auto;
   }
 
+  .mobile-phone-link{
+    font-size: 24px;
+  }
+  
   .customers-item {
-    width: calc((100%-16px)/2);
+    width: calc((100% - 16px)/2);
   }
 
   .customers-link {
